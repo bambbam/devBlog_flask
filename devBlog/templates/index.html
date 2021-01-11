@@ -1,58 +1,51 @@
 {% extends 'base.html' %}
 {%block content%}
-<header class="masthead" style="background-image: url({{url_for('static',filename='img/home-bg.jpg')}})")>
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-                <div class="site-heading">
-                    <h1>Clean Blog</h1>
-                    <span class="subheading">A Blog Theme by Start Bootstrap</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<div class="container">
-    <div class="row">
-    
-    </div>
-</div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
 
-<footer>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <ul class="list-inline text-center">
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-          <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Grow your business with Vesperr</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">We are team of talanted designers making websites with Bootstrap</h2>
+          <div data-aos="fade-up" data-aos-delay="800">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
-  </footer>
 
+  </section><!-- End Hero -->
+
+
+<main id="main">
+  <!-- ======= Clients Section ======= -->
+  {% include 'index_element/clients.html' %}
+  <!-- ======= About Us Section ======= -->
+  {% include 'index_element/about.html' %}
+  <!-- ======= Counts Section ======= --> 
+  {% include 'index_element/counts.html' %}
+  <!-- ======= Services Section ======= -->
+  {% include 'index_element/services.html' %}
+  <!-- ======= More Services Section ======= -->
+  {% include 'index_element/more-services.html' %}
+  <!-- ======= Features Section ======= -->
+  {% include 'index_element/features.html' %}
+  <!-- ======= Testimonials Section ======= -->
+  {% include 'index_element/testimonials.html' %}
+  <!-- ======= Portfolio Section ======= -->
+  {% include 'index_element/portfolio.html' %}
+  <!-- ======= Team Section ======= -->
+  {% include 'index_element/team.html' %}
+  <!-- ======= Pricing Section ======= -->
+  {% include 'index_element/pricing.html' %}
+  <!-- ======= F.A.Q Section ======= -->
+  {% include 'index_element/faq.html' %}
+  <!-- ======= Contact Section ======= -->
+  {% include 'index_element/contact.html' %}  
+  
+  </main><!-- End #main -->
 {%endblock%}
